@@ -12,10 +12,10 @@ console.log(sum);
 
 isEven(sum);
 
-if (isEven(sum) === true) {
-    console.log('Ha vinto il pari');
+if (userChoice === isEven(sum)) {
+    console.log('Hai vinto');
 } else {
-    console.log('Ha vinto il dispari');
+    console.log('Hai perso');
 }
 
 function iaRandomNumber(max, min) {
@@ -24,8 +24,8 @@ function iaRandomNumber(max, min) {
 
 function isEven(number) {
     if (number % 2 === 0){
-        return true;
+        return 'pari';
     } else {
-        return false;
+        return 'dispari';
     }
 }
